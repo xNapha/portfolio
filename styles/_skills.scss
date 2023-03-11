@@ -1,0 +1,23 @@
+@use "../variables";
+@use "../mixins";
+
+#skills {
+    @include mixins.displayFlex(column, center, center);
+    gap: 25%;
+    ul {
+        @include mixins.displayFlex(row, center, center);
+        flex-wrap: wrap;
+        li {
+            margin: 20px;
+            list-style: none;
+            text-align: center;
+        }
+    }
+}
+@media only screen and (max-width: 400px) {
+    #skills {
+        ul {
+            @include mixins.displayFlex(column, center, center);
+        }
+    }
+}

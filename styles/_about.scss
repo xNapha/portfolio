@@ -1,0 +1,12 @@
+@use "../variables";
+@use "../mixins";
+
+#about {
+    @include mixins.displayFlex(row, center, center);
+    div {
+        @include mixins.widthHeight(50rem, 20rem);
+        > * {
+            margin: 2rem;
+        }
+    }
+}

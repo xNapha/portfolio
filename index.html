@@ -5,50 +5,63 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="stylesheet" href="./styles.css" />
+        <script
+            src="https://kit.fontawesome.com/f00cdf3170.js"
+            crossorigin="anonymous"
+        ></script>
         <title>Nathan Cai - Software Developer Trainee</title>
     </head>
     <body>
         <!-- Nav links -->
-        <header>
-            <img src="" alt="NCai" />
-            <nav>
-                <a href="#home">Home</a>
+        <header class="navigation">
+            <div class="navigation__logo-con">
+                <a href="#home">NJC</a>
+            </div>
+            <nav class="navigation__links">
                 <a href="#skills">Skills</a>
                 <a href="#projects">Projects</a>
                 <a href="#about">About</a>
                 <a href="#contact">Contact</a>
             </nav>
         </header>
-        <main>
+        <main class="container">
             <!-- 
             Home section
             Name and current occupation
             -->
-            <section id="home">
-                <h1>I'm Nathan</h1>
-                <p>Software Developer Trainee</p>
+            <section
+                class="container__section container__section--primary-color"
+                id="home"
+            >
+                <div>
+                    <h1>I'm Nathan</h1>
+                    <p>Software Developer Trainee</p>
+                </div>
             </section>
             <!-- 
             Skills section
             List of all the languages that I have learnt
             -->
-            <section id="skills">
+            <section
+                class="container__section container__section--secondary-color"
+                id="skills"
+            >
                 <h3>What I know</h3>
                 <ul>
                     <li>
-                        <img src="" alt="HTML" />
+                        <i class="fa-brands fa-html5 fa-8x"></i>
                         <p>HTML</p>
                     </li>
                     <li>
-                        <img src="" alt="CSS" />
+                        <i class="fa-brands fa-css3-alt fa-8x"></i>
                         <p>CSS</p>
                     </li>
                     <li>
-                        <img src="" alt="SCSS" />
+                        <i class="fa-brands fa-sass fa-8x"></i>
                         <p>SCSS</p>
                     </li>
                     <li>
-                        <img src="" alt="JS" />
+                        <i class="fa-brands fa-square-js fa-8x"></i>
                         <p>JS</p>
                     </li>
                 </ul>
@@ -58,84 +71,122 @@
             List of all the projects that I have completed
             link Git hub and published project url
             -->
-            <section id="projects">
-                <div class="project__container">
-                    <img src="" alt="Project" />
-                    <h6>Project Title</h6>
-                    <p>Brief description</p>
-                    <div class="icon-container">
-                        <a href="">
-                            <img src="" alt="GitHub repo" />
-                        </a>
-                        <a href="">
-                            <img src="" alt="Published project" />
-                        </a>
+            <section
+                class="container__section container__section--primary-color"
+                id="projects"
+            >
+                <h3>My Projects</h3>
+                <section>
+                    <div class="projects__container">
+                        <img src="" alt="Project" />
+                        <h4>Project Title</h4>
+                        <p>Brief description</p>
+                        <div class="icon-container">
+                            <a href="">
+                                <i class="fa-brands fa-github"></i>
+                            </a>
+                            <a href="">
+                                <i class="fa-solid fa-paper-plane"></i>
+                            </a>
+                        </div>
                     </div>
-                </div>
-                <div class="project__container">
-                    <img src="" alt="Project" />
-                    <h6>Project Title</h6>
-                    <p>Brief description</p>
-                    <div class="icon-container">
-                        <a href="">
-                            <img src="" alt="GitHub repo" />
-                        </a>
-                        <a href="">
-                            <img src="" alt="Published project" />
-                        </a>
+                    <div class="projects__container">
+                        <img src="" alt="Project" />
+                        <h4>Project Title</h4>
+                        <p>Brief description</p>
+                        <div class="icon-container">
+                            <a href="">
+                                <i class="fa-brands fa-github"></i>
+                            </a>
+                            <a href="">
+                                <i class="fa-solid fa-paper-plane"></i>
+                            </a>
+                        </div>
                     </div>
-                </div>
-                <div class="project__container">
-                    <img src="" alt="Project" />
-                    <h6>Project Title</h6>
-                    <p>Brief description</p>
-                    <div class="icon-container">
-                        <a href="">
-                            <img src="" alt="GitHub repo" />
-                        </a>
-                        <a href="">
-                            <img src="" alt="Published project" />
-                        </a>
+                    <div class="projects__container">
+                        <img src="" alt="Project" />
+                        <h4>Project Title</h4>
+                        <p>Brief description</p>
+                        <div class="icon-container">
+                            <a href="">
+                                <i class="fa-brands fa-github"></i>
+                            </a>
+                            <a href="">
+                                <i class="fa-solid fa-paper-plane"></i>
+                            </a>
+                        </div>
                     </div>
-                </div>
-                <div class="project__container">
-                    <img src="" alt="Project" />
-                    <h6>Project Title</h6>
-                    <p>Brief description</p>
-                    <div class="icon-container">
-                        <a href="">
-                            <img src="" alt="GitHub repo" />
-                        </a>
-                        <a href="">
-                            <img src="" alt="Published project" />
-                        </a>
+                    <div class="projects__container">
+                        <img src="" alt="Project" />
+                        <h4>Project Title</h4>
+                        <p>Brief description</p>
+                        <div class="icon-container">
+                            <a href="">
+                                <i class="fa-brands fa-github"></i>
+                            </a>
+                            <a href="">
+                                <i class="fa-solid fa-paper-plane"></i>
+                            </a>
+                        </div>
                     </div>
-                </div>
+                </section>
             </section>
             <!-- 
             About section
             Brief description about myself and what I aspire to be
             -->
-            <section id="about">
+            <section
+                class="container__section container__section--secondary-color"
+                id="about"
+            >
                 <div>
-                    <h4>Who am I?</h4>
+                    <h3>Who am I?</h3>
                     <p>
                         An aspiring software developer, I enjoy creating things
                         and admiring the finished product.
                     </p>
+                    <p>Besides that I'm reading One Piece for the nth time.</p>
                     <p>
                         My current goal is to do accomplish everything my past
-                        self thought would be unreachable.
+                        self thought would be impossible.
                     </p>
-                    <p>Besides that I'm reading One Piece for the nth time</p>
                 </div>
             </section>
             <!-- 
             Home Page 
             My Contact details, linkedIn, GitHub, email
             -->
-            <section id="contact"></section>
+            <section
+                class="container__section container__section--primary-color"
+                id="contact"
+            >
+                <div class="contact-links">
+                    <h3>Contact Me</h3>
+                    <ul>
+                        <li>
+                            <i class="fa-solid fa-envelope"></i>
+                            <a>Email</a>
+                        </li>
+                        <li>
+                            <i class="fa-brands fa-github"></i>
+                            <a href="https://github.com/xNapha" target="_blank"
+                                >GitHub</a
+                            >
+                        </li>
+                        <li>
+                            <i class="fa-brands fa-linkedin"></i>
+                            <a
+                                href="https://www.linkedin.com/in/nathan-cai-6a9b251a1/"
+                                target="_blank"
+                                >LinkedIn</a
+                            >
+                        </li>
+                    </ul>
+                </div>
+            </section>
         </main>
-        <footer></footer>
+        <footer>
+            <p>Nathan Cai</p>
+        </footer>
     </body>
 </html>

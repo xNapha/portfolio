@@ -1,0 +1,31 @@
+@mixin headerFooterSizing($headerHeight, $footerHeight) {
+    header {
+        height: $headerHeight;
+        width: 100vw;
+    }
+    footer {
+        height: $footerHeight;
+        width: 100vw;
+    }
+}
+
+@mixin displayFlex($direction: column, $justify: center, $align: center) {
+    display: flex;
+    flex-direction: $direction;
+    justify-content: $justify;
+    align-items: $align;
+}
+
+@mixin widthHeight($width, $height: auto) {
+    width: $width;
+    min-height: $height;
+}
+
+@mixin sectionBackgroundColor($primary, $secondary) {
+    &--primary-color {
+        background-color: $primary;
+    }
+    &--secondary-color {
+        background-color: $secondary;
+    }
+}

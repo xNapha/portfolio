@@ -1,0 +1,56 @@
+@use "../variables";
+@use "../mixins";
+
+.navigation {
+    display: grid;
+    grid-template-columns: 6fr 2fr;
+    position: fixed;
+    top: 0;
+    z-index: 1;
+    background-color: variables.$quaternary-background-color;
+    a {
+        text-decoration: none;
+    }
+    a:hover {
+        transition: 1s;
+        transform: skew(-2deg);
+        color: variables.$tertiary-background-color;
+        transition: 0.5s;
+        cursor: pointer;
+    }
+
+    &__logo-con {
+        @include mixins.displayFlex(row, flex-start, center);
+        margin-left: 2rem;
+        a {
+            font-size: 45px;
+        }
+    }
+    &__links {
+        @include mixins.displayFlex(row, space-evenly, center);
+        a {
+            font-size: 20px;
+            margin: 0 20px;
+        }
+    }
+}
+@media only screen and (max-width: 600px) {
+    .navigation {
+        display: grid;
+        grid-template-columns: 1fr;
+        justify-items: center;
+        a {
+            margin-top: 0.5rem;
+        }
+        &__logo-con {
+            margin: 10px;
+        }
+        &__links {
+            @include mixins.displayFlex(row, center, center);
+            a {
+                font-size: 1rem;
+                margin: 0 10px;
+            }
+        }
+    }
+}

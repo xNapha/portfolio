@@ -1,0 +1,82 @@
+@use "../variables";
+@use "../mixins";
+#projects {
+    text-align: center;
+
+    h3 {
+        margin-bottom: 5rem;
+    }
+    section {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        justify-items: center;
+    }
+    .projects__container {
+        margin: 20px;
+        border: 5px solid white;
+        border-radius: variables.$border-radius;
+        @include mixins.widthHeight(30rem);
+        @include mixins.displayFlex(column, center, center);
+        > * {
+            margin: 0.3rem;
+        }
+        img {
+            @include mixins.widthHeight(20rem, 20rem);
+            border: 1px solid white;
+            border-radius: variables.$border-radius;
+        }
+        p {
+            font-size: 15px;
+        }
+        .icon-container {
+            a {
+                text-decoration: none;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 1700px) {
+    #projects {
+        section {
+            grid-template-columns: 1fr 1fr;
+        }
+    }
+}
+@media only screen and (max-width: 1200px) {
+    #projects {
+        section {
+            grid-template-columns: 1fr;
+        }
+    }
+}
+@media only screen and (max-width: 550px) {
+    #projects {
+        .projects__container {
+            @include mixins.widthHeight(25rem);
+            img {
+                @include mixins.widthHeight(20rem, 20rem);
+            }
+        }
+    }
+}
+@media only screen and (max-width: 500px) {
+    #projects {
+        .projects__container {
+            @include mixins.widthHeight(20rem);
+            img {
+                @include mixins.widthHeight(13rem, 13rem);
+            }
+        }
+    }
+}
+@media only screen and (max-width: 360px) {
+    #projects {
+        .projects__container {
+            @include mixins.widthHeight(16rem);
+            img {
+                @include mixins.widthHeight(12rem, 12rem);
+            }
+        }
+    }
+}
