@@ -22,6 +22,7 @@
     &__logo-con {
         @include mixins.displayFlex(row, flex-start, center);
         margin-left: 2rem;
+        margin: 10px;
         a {
             font-size: 45px;
         }
@@ -34,6 +35,16 @@
         }
     }
 }
+.hidden {
+    transform: translateY(-1 * 7rem);
+    transition: 1s;
+}
+
+.visible {
+    transform: translateY(0);
+    transition: 1s;
+}
+
 @media only screen and (max-width: 600px) {
     .navigation {
         display: grid;

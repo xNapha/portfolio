@@ -15,13 +15,13 @@
         margin: 20px;
         border: 5px solid white;
         border-radius: variables.$border-radius;
-        @include mixins.widthHeight(30rem);
+        @include mixins.widthHeight(25rem);
         @include mixins.displayFlex(column, center, center);
         > * {
             margin: 0.3rem;
         }
         img {
-            @include mixins.widthHeight(20rem, 20rem);
+            @include mixins.widthHeight(18rem, 18rem);
             border: 1px solid white;
             border-radius: variables.$border-radius;
         }
@@ -35,48 +35,27 @@
         }
     }
 }
-
-@media only screen and (max-width: 1700px) {
-    #projects {
-        section {
-            grid-template-columns: 1fr 1fr;
-        }
-    }
+// for screens between 1025px to 1400px
+@include mixins.doubleXLMediaQuery {
+    @include mixins.projectMediaQuerys(1fr 1fr 1fr, 80%, 400px, 80%, 250px);
 }
-@media only screen and (max-width: 1200px) {
-    #projects {
-        section {
-            grid-template-columns: 1fr;
-        }
-    }
+// for screens between 769px to 1024px
+@include mixins.largeMediaQuery {
+    @include mixins.projectMediaQuerys(1fr 1fr, 80%, 400px, 80%, 250px);
 }
-@media only screen and (max-width: 550px) {
+// for screens between 481px to 768px
+@include mixins.mediumMediaQuery {
+    @include mixins.projectMediaQuerys(1fr, 80%, 450px, 80%, 300px);
     #projects {
         .projects__container {
-            @include mixins.widthHeight(25rem);
+            max-width: 400px;
             img {
-                @include mixins.widthHeight(20rem, 20rem);
+                max-width: 400px;
             }
         }
     }
 }
-@media only screen and (max-width: 500px) {
-    #projects {
-        .projects__container {
-            @include mixins.widthHeight(20rem);
-            img {
-                @include mixins.widthHeight(13rem, 13rem);
-            }
-        }
-    }
-}
-@media only screen and (max-width: 360px) {
-    #projects {
-        .projects__container {
-            @include mixins.widthHeight(16rem);
-            img {
-                @include mixins.widthHeight(12rem, 12rem);
-            }
-        }
-    }
+// for screens between 1px to 480px
+@include mixins.smallMediaQuery {
+    @include mixins.projectMediaQuerys(1fr, 80%, 400px, 80%, 250px);
 }

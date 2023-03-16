@@ -1,0 +1,66 @@
+@use "../variables";
+@use "../mixins";
+@import "https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap";
+
+* {
+    font-family: "Quicksand", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #fff;
+}
+html {
+    scroll-behavior: smooth;
+}
+body {
+    @include mixins.displayFlex;
+    @include mixins.headerFooterSizing(variables.$header-height, 1.7rem);
+    position: relative;
+    top: variables.$header-height;
+    font-size: 30px;
+    .container {
+        @include mixins.widthHeight(100%);
+        &__section {
+            padding: 5rem 0;
+            @include mixins.widthHeight(100%, 100vh);
+            @include mixins.sectionBackgroundColor(
+                variables.$primary-background-color,
+                variables.$secondary-background-color
+            );
+        }
+        #home {
+            @include mixins.displayFlex(row, center, center);
+        }
+    }
+    footer {
+        background-color: variables.$tertiary-background-color;
+        text-align: center;
+        font-size: 20px;
+    }
+}
+// for screens between 1025px to 1400px
+@include mixins.doubleXLMediaQuery {
+    body {
+        font-size: 27.5px;
+    }
+}
+// for screens between 769px to 1024px
+@include mixins.largeMediaQuery {
+    body {
+        font-size: 25px;
+    }
+}
+// for screens between 481px to 768px
+@include mixins.mediumMediaQuery {
+    body {
+        @include mixins.headerFooterSizing(7rem, 1.7rem);
+        font-size: 22.5px;
+    }
+}
+// for screens between 1px to 480px
+@include mixins.smallMediaQuery {
+    body {
+        @include mixins.headerFooterSizing(7rem, 1.7rem);
+        font-size: 20px;
+    }
+}
