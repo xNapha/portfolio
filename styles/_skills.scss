@@ -3,7 +3,9 @@
 
 #skills {
     @include mixins.displayFlex(column, center, center);
-    gap: 25%;
+    h3 {
+        margin-bottom: 5rem;
+    }
     ul {
         @include mixins.displayFlex(row, center, center);
         flex-wrap: wrap;
@@ -11,6 +13,9 @@
             margin: 20px;
             list-style: none;
             text-align: center;
+            .devicon {
+                font-size: 10rem;
+            }
         }
     }
 }
