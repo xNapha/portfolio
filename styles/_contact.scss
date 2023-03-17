@@ -8,8 +8,6 @@
         > * {
             margin: 10px 0;
         }
-        h4 {
-        }
         ul {
             @include mixins.displayFlex(row, center, center);
             li {

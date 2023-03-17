@@ -1,5 +1,12 @@
 # portfolio
 
-This is my first website portfolio, I took a lot of inspiration from other portfolios just to get a rough idea of what it should look like and how I go about creating it.
+This portfolio just describes my current skills, completed projects, current projects that I am happy to show off, and aspirations as a person.
 
-After I add everything needed to meet the minimum requirements, I will then continue on working until I create something that shows more of my personality.
+This was created in HTML and CSS with a little bit of Javascript used for animation purposes.
+
+Credits:
+
+Icons used:
+
+1. https://devicon.dev/
+2. https://fontawesome.com/

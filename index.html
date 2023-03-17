@@ -9,11 +9,18 @@
             src="https://kit.fontawesome.com/f00cdf3170.js"
             crossorigin="anonymous"
         ></script>
+        <script src="./index.js" defer></script>
+        <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css"
+        />
         <title>Nathan Cai - Software Developer Trainee</title>
     </head>
     <body>
-        <!-- Nav links -->
-        <header class="navigation">
+        <!-- Nav links 
+            when clicked user will be sent to the appropriate section-->
+
+        <header class="navigation visible">
             <div class="navigation__logo-con">
                 <a href="#home">NJC</a>
             </div>
@@ -47,22 +54,41 @@
                 id="skills"
             >
                 <h3>What I know</h3>
+                <!-- languages learnt will be listed as icons with the title underneath -->
                 <ul>
                     <li>
-                        <i class="fa-brands fa-html5 fa-8x"></i>
+                        <i class="devicon devicon-html5-plain"></i>
                         <p>HTML</p>
                     </li>
                     <li>
-                        <i class="fa-brands fa-css3-alt fa-8x"></i>
+                        <i class="devicon devicon-css3-plain"></i>
                         <p>CSS</p>
                     </li>
                     <li>
-                        <i class="fa-brands fa-sass fa-8x"></i>
-                        <p>SCSS</p>
+                        <i class="devicon devicon-sass-original"></i>
+                        <p>SASS</p>
                     </li>
                     <li>
-                        <i class="fa-brands fa-square-js fa-8x"></i>
+                        <i class="devicon devicon-javascript-plain"></i>
                         <p>JS</p>
+                    </li>
+                    <li>
+                        <i class="devicon devicon-java-plain"></i>
+                        <p>Java</p>
+                    </li>
+                    <li>
+                        <i class="devicon devicon-spring-plain"></i>
+                        <p>Spring</p>
+                    </li>
+                    <li>
+                        <i class="devicon devicon-firebase-plain"></i>
+                        <p>Firebase</p>
+                    </li>
+                    <li>
+                        <i
+                            class="devicon devicon-amazonwebservices-original"
+                        ></i>
+                        <p>AWS</p>
                     </li>
                 </ul>
             </section>
@@ -77,6 +103,11 @@
             >
                 <h3>My Projects</h3>
                 <section>
+                    <!-- Each project container holds:
+                        - a brief image of the final product
+                        - title of the project
+                        - a brief description of the project
+                        - links to the published site and the github repo to see the code used-->
                     <div class="projects__container">
                         <img src="" alt="Project" />
                         <h4>Project Title</h4>
@@ -145,16 +176,20 @@
                         An aspiring software developer, I enjoy creating things
                         and admiring the finished product.
                     </p>
-                    <p>Besides that I'm reading One Piece for the nth time.</p>
                     <p>
-                        My current goal is to do accomplish everything my past
-                        self thought would be impossible.
+                        I began my journey in 2021, where I learnt python during
+                        University, without much thought about making it a
+                        career. As I continued to learn more and more I started
+                        to wonder if I could be able to get a job without a
+                        proper Undergraduate degree, which made me want to try
+                        pursue a career in the field.
                     </p>
+                    <p>Besides that I'm reading One Piece for the nth time.</p>
                 </div>
             </section>
             <!-- 
             Home Page 
-            My Contact details, linkedIn, GitHub, email
+            My Contact details, linkedIn page, GitHub profile, email address
             -->
             <section
                 class="container__section container__section--primary-color"
@@ -165,7 +200,7 @@
                     <ul>
                         <li>
                             <i class="fa-solid fa-envelope"></i>
-                            <a>Email</a>
+                            <a href="mailto:nathancai1997@gmail.com">Email</a>
                         </li>
                         <li>
                             <i class="fa-brands fa-github"></i>

@@ -1,53 +1,8 @@
-@use "variables";
 @use "mixins";
 @use "./styles/navigation";
 @use "./styles/skills";
 @use "./styles/projects";
 @use "./styles/about";
 @use "./styles/contact";
+@use "./styles/main.scss";
 @import "https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap";
-
-* {
-    font-family: "Quicksand", sans-serif;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    color: #fff;
-}
-html {
-    scroll-behavior: smooth;
-    scroll-padding-top: variables.$header-height;
-    scroll-margin-top: variables.$header-height;
-}
-body {
-    @include mixins.displayFlex;
-    @include mixins.headerFooterSizing(variables.$header-height, 1.7rem);
-    position: relative;
-    top: variables.$header-height;
-    font-size: 30px;
-    .container {
-        @include mixins.widthHeight(100%);
-        &__section {
-            padding: 5rem 0;
-            @include mixins.widthHeight(100%, 100vh);
-            @include mixins.sectionBackgroundColor(
-                variables.$primary-background-color,
-                variables.$secondary-background-color
-            );
-        }
-        #home {
-            @include mixins.displayFlex(row, center, center);
-        }
-    }
-    footer {
-        background-color: variables.$tertiary-background-color;
-        text-align: center;
-        font-size: 20px;
-    }
-}
-@media only screen and (max-width: 600px) {
-    body {
-        @include mixins.headerFooterSizing(7rem, 1.7rem);
-        font-size: 20px;
-    }
-}

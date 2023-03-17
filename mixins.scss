@@ -1,3 +1,5 @@
+@use "./variables";
+
 @mixin headerFooterSizing($headerHeight, $footerHeight) {
     header {
         height: $headerHeight;
@@ -27,5 +29,51 @@
     }
     &--secondary-color {
         background-color: $secondary;
+    }
+}
+// for screens between 1025px to 1400px
+@mixin doubleXLMediaQuery {
+    @media only screen and (min-width: (variables.$lg-max-width + 1px)) and (max-width: variables.$xxl-max-width) {
+        @content;
+    }
+}
+// for screens between 769px to 1024px
+@mixin largeMediaQuery {
+    @media only screen and (min-width: (variables.$md-max-width + 1px)) and (max-width: variables.$lg-max-width) {
+        @content;
+    }
+}
+// for screens between 481px to 768px
+@mixin mediumMediaQuery {
+    @media only screen and (min-width: (variables.$sm-max-width + 1px)) and (max-width: variables.$md-max-width) {
+        @content;
+    }
+}
+// for screens between 1px to 480px
+@mixin smallMediaQuery {
+    @media only screen and (min-width: 1px) and (max-width: variables.$sm-max-width) {
+        @content;
+    }
+}
+// for the projects containers, width, height, grid align-ment
+@mixin projectMediaQuerys(
+    $grid-columns,
+    $container-width,
+    $container-height,
+    $img-width,
+    $img-height
+) {
+    #projects {
+        section {
+            grid-template-columns: $grid-columns;
+        }
+        .projects__container {
+            width: $container-width;
+            min-height: $container-height;
+            img {
+                width: $img-width;
+                min-height: $img-height;
+            }
+        }
     }
 }
