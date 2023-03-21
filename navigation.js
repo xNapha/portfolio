@@ -1,5 +1,4 @@
 const navigation = document.querySelector(".navigation");
-const home = document.querySelector("#home");
 let prevScrollLocation = window.pageYOffset;
 
 // remove class visible and add calss hidden to navigation
