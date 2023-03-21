@@ -311,6 +311,9 @@ body .container #home {
   flex-direction: row;
   justify-content: center;
   align-items: center;
+  background-image: url(./../assets/wallpaper.png);
+  background-size: contain;
+  background-attachment: fixed;
 }
 body footer {
   background-color: #e94560;
