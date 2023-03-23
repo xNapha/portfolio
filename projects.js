@@ -40,7 +40,6 @@ const projects = [
 const projectsSection = document.body.querySelector(".projects");
 
 // iterate through projects file to display all projects within the file
-
 const renderProjects = (section, projects) => {
     const innerHTML = (project) => {
         return `
