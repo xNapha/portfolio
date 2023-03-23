@@ -30,9 +30,17 @@ body {
         }
         #home {
             @include mixins.displayFlex(row, center, center);
-            background-image: url("./../assets/wallpaper.png");
+            background-image: url("../portfolio/assets/wallpaper.png"),
+                url("./assets/wallpaper.png");
             background-size: contain;
             background-attachment: fixed;
+            div {
+                h1 {
+                    span {
+                        color: variables.$tertiary-background-color;
+                    }
+                }
+            }
         }
     }
     footer {

@@ -3,6 +3,10 @@
 #contact {
     @include mixins.widthHeight(100vw, 4rem);
     padding: 10px;
+    background-image: url("../portfolio/assets/wallpaper.png"),
+        url("./assets/wallpaper.png");
+    background-size: contain;
+    background-attachment: fixed;
     div {
         @include mixins.displayFlex(column, center, center);
         > * {

@@ -3,10 +3,16 @@
 
 #about {
     @include mixins.displayFlex(row, center, center);
+
     div {
         @include mixins.widthHeight(50rem, 20rem);
         > * {
             margin: 2rem;
+        }
+        p {
+            span {
+                color: variables.$tertiary-background-color;
+            }
         }
     }
 }

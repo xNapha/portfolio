@@ -25,6 +25,9 @@
             border: 1px solid white;
             border-radius: variables.$border-radius;
         }
+        h4 {
+            color: variables.$tertiary-background-color;
+        }
         p {
             font-size: 15px;
         }

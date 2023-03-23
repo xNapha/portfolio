@@ -95,7 +95,7 @@
   text-align: center;
 }
 #skills ul li .devicon {
-  font-size: 10rem;
+  font-size: 8rem;
 }
 
 @media only screen and (max-width: 400px) {
@@ -136,6 +136,9 @@
   min-height: 18rem;
   border: 1px solid white;
   border-radius: 20px;
+}
+#projects .projects__container h4 {
+  color: #e94560;
 }
 #projects .projects__container p {
   font-size: 15px;
@@ -215,11 +218,17 @@
 #about div > * {
   margin: 2rem;
 }
+#about div p span {
+  color: #e94560;
+}
 
 #contact {
   width: 100vw;
   min-height: 4rem;
   padding: 10px;
+  background-image: url("../portfolio/assets/wallpaper.png"), url("./assets/wallpaper.png");
+  background-size: contain;
+  background-attachment: fixed;
 }
 #contact div {
   display: flex;
@@ -311,9 +320,12 @@ body .container #home {
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  background-image: url("./../assets/wallpaper.png");
+  background-image: url("../portfolio/assets/wallpaper.png"), url("./assets/wallpaper.png");
   background-size: contain;
   background-attachment: fixed;
+}
+body .container #home div h1 span {
+  color: #e94560;
 }
 body footer {
   background-color: #e94560;
