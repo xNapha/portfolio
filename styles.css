@@ -321,7 +321,7 @@ body .container #home {
   justify-content: center;
   align-items: center;
   background-image: url("../portfolio/assets/wallpaper.png"), url("./assets/wallpaper.png");
-  background-size: contain;
+  background-size: 180%;
   background-attachment: fixed;
 }
 body .container #home div h1 span {

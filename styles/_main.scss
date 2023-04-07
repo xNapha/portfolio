@@ -32,7 +32,7 @@ body {
             @include mixins.displayFlex(row, center, center);
             background-image: url("../portfolio/assets/wallpaper.png"),
                 url("./assets/wallpaper.png");
-            background-size: contain;
+            background-size: 180%;
             background-attachment: fixed;
             div {
                 h1 {
