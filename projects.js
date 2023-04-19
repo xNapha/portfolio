@@ -2,45 +2,27 @@
 const projects = [
     {
         title: "App-Who-le OS",
-        description: "Recreating Mac OS on a browser",
+        description:
+            "Recreation of the Mac OS system on a web browser. Built with JS, HTML, and SASS/CSS",
         gitHubLink: "https://github.com/xNapha/fake-os",
         websiteLink: "https://xnapha.github.io/fake-os/",
-        image: "../../assets/project-images/fake-os.png",
+        image: "./assets/project-images/fake-os.png",
     },
     {
         title: "Morse Code Translator",
-        description: "Translate the popular encrypted alphabet, morse code.",
+        description:
+            "Translator that can translate morse code to english and vice versa. Built with JS, HTML, and SASS/CSS",
         gitHubLink: "https://github.com/xNapha/morse-code-translator",
         websiteLink: "https://xnapha.github.io/morse-code-translator/",
-        image: "../../assets/project-images/morse-code-translator.png",
+        image: "./assets/project-images/morse-code-translator.png",
     },
     {
         title: "Google Books",
-        description: "Search engine only for books",
+        description:
+            "Search engine that makes use of the google books api.  Built with React SASS/CSS",
         gitHubLink: "https://github.com/xNapha/google-books",
         websiteLink: "https://xnapha.github.io/google-books/",
-        image: "../../assets/project-images/google-books.png",
-    },
-    {
-        title: "Project 4",
-        description: "Some Description",
-        gitHubLink: "",
-        websiteLink: "",
-        image: "../../assets/project-images/",
-    },
-    {
-        title: "Project 5",
-        description: "Some Description",
-        gitHubLink: "",
-        websiteLink: "",
-        image: "../../assets/project-images/",
-    },
-    {
-        title: "Project 6",
-        description: "Some Description",
-        gitHubLink: "",
-        websiteLink: "",
-        image: "../../assets/project-images/",
+        image: "./assets/project-images/google-books.png",
     },
 ];
 // select the tag where the projects will be displayed
