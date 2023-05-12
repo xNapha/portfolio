@@ -25,17 +25,11 @@ Will link projects once they are completed and ready to show
 
 **Who am I?**
 
-An aspiring software developer, I enjoy creating things
-and admiring the finished product.
+Before starting my journey with \_nology I was a self taught developer, fumbling their way through front-end development as a hobby. Not believing that I will be able to make a career out of it, but since I’ve been given a platform to hone my skills, I’ll try to find some proper footing and start running.
 
-I began my journey in 2021, where I learnt python during
-University, without much thought about making it a
-career. As I continued to learn more and more I started
-to wonder if I could be able to get a job without a
-proper Undergraduate degree, which made me want to try
-pursue a career in the field.
+My passion for technology started when I wanted to be the best pokemon trainer. Now it has evolved into a love for innovation and a curiosity of what is to come; a couple of reasons why I have been bewitched by the field. Because whenever I complete a project or a simple codewars challenge I am always left with this question in mind. “It works, but can it be better?”.
 
-Besides that I'm reading One Piece for the nth time.
+Aside from fumbling around, I am usually reading and discover new book/manga series, walking my dog, watching netflix, brainstorming some fun short story ideas and learning how to draw. One of my goals is to create an animated short film, but with my current drawing skills, that’ll happen in a couple more centuries. Unless stick figures count, then maybe only a couple of decades.
 
 ### Contact Me
 
